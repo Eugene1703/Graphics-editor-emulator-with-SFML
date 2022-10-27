@@ -11,10 +11,10 @@ using namespace std;
 #define SERVERADDR "127.0.0.1"
 int main(int argc, char* argv[])
 {
-    
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     char buff[10 * 1014];
+    string cmd;
     if (WSAStartup(0x202, (WSADATA*)&buff[0]))
     {
         printf("WSAStartup error: %d\n", WSAGetLastError());
@@ -41,21 +41,22 @@ int main(int argc, char* argv[])
     while (true)
     {
         cout << endl <<"Введіть команду:" << endl; 
-        cout << "1 - Очистка дисплею" << endl;
-        cout << "2 - Піксель" << endl;
-        cout << "3 - Лінія" << endl;
-        cout << "4 - Прямокутник" << endl;
-        cout << "5 - Заповненний прямокутник" << endl;
-        cout << "6 - Еліпс" << endl;
-        cout << "7 - Заповенний еліпс" << endl;
-        cout << "8 - Коло" << endl;
-        cout << "9 - Заповнене коло" << endl;
-        cout << "10 - Обрізаний прямокутник" << endl;
-        cout << "11 - Заповнений обрізаний прямокутник" << endl;\
-        cout << "12 - Текст" << endl;
-        cout << "13 - Картинка" << endl;
-        cout << "14 - Встановлення орієнтації" << endl;
-        cout << "15 - Отримати висоту/ширину" << endl;
+        cout << "0 - Очистка дисплею" << endl;
+        cout << "1 - Піксель" << endl;
+        cout << "2 - Лінія" << endl;
+        cout << "3 - Прямокутник" << endl;
+        cout << "4 - Заповненний прямокутник" << endl;
+        cout << "5 - Еліпс" << endl;
+        cout << "6 - Заповенний еліпс" << endl;
+        cout << "7 - Коло" << endl;
+        cout << "8 - Заповнене коло" << endl;
+        cout << "9 - Обрізаний прямокутник" << endl;
+        cout << "A - Заповнений обрізаний прямокутник" << endl;\
+        cout << "B - Текст" << endl;
+        cout << "C - Картинка" << endl;
+        cout << "D - Встановлення орієнтації" << endl;
+        cout << "E - Отримати висоту" << endl;
+        cout << "F - Отримати ширину" << endl;
         fgets(&buff[0], sizeof(buff) - 1, stdin);
         sendto(my_sock, &buff[0], strlen(&buff[0]), 0, (sockaddr*)&dest_addr, sizeof(dest_addr));
         sockaddr_in server_addr;
@@ -71,7 +72,7 @@ int main(int argc, char* argv[])
             return -1;
         }
         buff[n] = 0;
-        cout << endl << "Відповідь серверу :" << &buff[0] << endl;
+        cout << endl << "Відповідь серверу: " << &buff[0] << endl;
     }
     closesocket(my_sock);
     WSACleanup();
