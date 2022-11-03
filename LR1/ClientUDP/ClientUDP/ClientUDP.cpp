@@ -58,6 +58,7 @@ int main(int argc, char* argv[])
         cout << "E - Отримати висоту" << endl;
         cout << "F - Отримати ширину" << endl;
         fgets(&buff[0], sizeof(buff) - 1, stdin);
+        if (sizeof(buff) < 0) { cout << "Помилка введення команди" << endl; continue; }
         sendto(my_sock, &buff[0], strlen(&buff[0]), 0, (sockaddr*)&dest_addr, sizeof(dest_addr));
         sockaddr_in server_addr;
         int server_addr_size = sizeof(server_addr);

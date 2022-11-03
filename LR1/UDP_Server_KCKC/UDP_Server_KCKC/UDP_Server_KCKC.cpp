@@ -66,91 +66,90 @@ int main(int argc, char* argv[])
             cout << "Команда (" << my_parser.my_answer.comm_id << ") виконана і має наступні параметри:" << endl;
             switch (my_parser.my_answer.comm_id)
             {
-            case 0:
+            case CLEAR_DISPLAY:
                 break;
-            case 1:
+            case DRAW_PIXEL:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 break;
-            case 2:
+            case DRAW_LINE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "x1 = " << my_parser.my_answer.x1 << endl;
                 cout << "y1 = " << my_parser.my_answer.y1 << endl;
                 break;
-            case 3:
+            case DRAW_RECTANGLE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "w = " << my_parser.my_answer.w << endl;
                 cout << "h = " << my_parser.my_answer.h << endl;
                 break;
-            case 4:
+            case DRAW_FILL_RECTANGLE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "w = " << my_parser.my_answer.w << endl;
                 cout << "h = " << my_parser.my_answer.h << endl;
                 break;
-            case 5:
+            case DRAW_ELLIPSE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "radius_x = " << my_parser.my_answer.radius_x << endl;
                 cout << "radius_y = " << my_parser.my_answer.radius_y << endl;
                 break;
-            case 6:
+            case DRAW_FILL_ELLIPSE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "radius_x = " << my_parser.my_answer.radius_x << endl;
                 cout << "radius_y = " << my_parser.my_answer.radius_y << endl;
                 break;
-            case 7:
+            case DRAW_CIRCLE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "radius = " << my_parser.my_answer.radius << endl;
                 break;
-            case 8:
+            case DRAW_FILL_CIRCLE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "radius = " << my_parser.my_answer.radius << endl;
                 break;
-            case 9:
+            case DRAW_ROUNDED_RECTANGLE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "w = " << my_parser.my_answer.w << endl;
                 cout << "h = " << my_parser.my_answer.h << endl;
                 cout << "radius =" << my_parser.my_answer.radius << endl;
                 break;
-            case 10:
+            case DRAW_FILL_ROUNDED_RECTANGLE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "w = " << my_parser.my_answer.w << endl;
                 cout << "h = " << my_parser.my_answer.h << endl;
                 cout << "radius =" << my_parser.my_answer.radius << endl;
                 break;
-            case 11:
+            case DRAW_TEXT:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
-                cout << "font= " << my_parser.my_answer.font;
-                cout << "length= " << my_parser.my_answer.length;
-                cout << "text= " << my_parser.my_answer.text;
-
+                cout << "font= " << my_parser.my_answer.font << endl;
+                cout << "length= " << my_parser.my_answer.length << endl;
+                cout << "text=" << my_parser.my_answer.text << endl;
                 break;
-            case 12:
+            case DRAW_IMAGE:
                 cout << "x0 = " << my_parser.my_answer.x0 << endl;
                 cout << "y0 = " << my_parser.my_answer.y0 << endl;
                 cout << "w = " << my_parser.my_answer.w << endl;
                 cout << "h = " << my_parser.my_answer.h << endl;
                 break;
-            case 13:
+            case SET_ORIENTATION:
                 cout << "orientation = " << my_parser.my_answer.orientation;
                 break;
-            case 14:
+            case GET_WIDTH:
+                cout << "Width = " << my_parser.my_answer.width;
+                break;
+            case GET_HEIGHT:
                 cout << "Height = " << my_parser.my_answer.height;
                 break;
-            case 15:
-                cout << "Width = " << my_parser.my_answer.height;
-                break;
             }
-            if (my_parser.my_answer.comm_id != 15 && my_parser.my_answer.comm_id !=14 && my_parser.my_answer.comm_id !=13)
+            if (my_parser.my_answer.comm_id != GET_HEIGHT && my_parser.my_answer.comm_id !=GET_WIDTH && my_parser.my_answer.comm_id !=SET_ORIENTATION && my_parser.my_answer.comm_id!=DRAW_TEXT)
             {
                 cout << "Color_R = " << my_parser.my_answer.R << endl;
                 cout << "Color_G = " << my_parser.my_answer.G << endl;
