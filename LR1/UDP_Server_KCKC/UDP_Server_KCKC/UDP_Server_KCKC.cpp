@@ -29,7 +29,6 @@ int main(int argc, char* argv[])
         WSACleanup();
         return -1;
     };
-
     sockaddr_in local_addr;
     local_addr.sin_family = AF_INET;
     local_addr.sin_addr.s_addr = INADDR_ANY;
@@ -48,18 +47,18 @@ int main(int argc, char* argv[])
         sockaddr_in client_addr;
         int client_addr_size = sizeof(client_addr);
         int bsize = recvfrom(Socket, &buff[0], sizeof(buff) - 1, 0, (sockaddr*)&client_addr, &client_addr_size);
+        cout << bsize << endl;
         if (bsize == SOCKET_ERROR) {
             printf("recvfrom() error: %d\n", WSAGetLastError());
         };
         HOSTENT* hst;
         hst = gethostbyaddr((char*)&client_addr.sin_addr, 4, AF_INET);
         printf("+%s [%s:%d] new DATAGRAM!\n", (hst) ? hst->h_name : "Unknown host", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
-        buff[bsize - 1] = ' ';
-        buff[bsize] = 0;
+        buff[bsize] = '\0';
         printf("C=>S:%s\n", &buff[0]);
         string cmd = &buff[0];
         string err;
-        parser my_parser;
+        parser my_parser(1280,720);
         my_parser.parse(const_cast<char*>(cmd.c_str()));
         if (my_parser.my_answer.check)
         {
