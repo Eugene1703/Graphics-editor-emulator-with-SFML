@@ -28,7 +28,7 @@ public:
     answer my_answer;
     int count(char* buff)
     {
-        string str = &buff[0];
+        string str = buff;
         int counter = 0, pos = str.find(' ');
         while (pos + 1)
         {
