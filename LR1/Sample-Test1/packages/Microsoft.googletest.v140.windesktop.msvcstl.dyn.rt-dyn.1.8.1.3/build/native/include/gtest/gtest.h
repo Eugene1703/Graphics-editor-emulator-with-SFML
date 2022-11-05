@@ -1963,7 +1963,7 @@ class TestWithParam : public Test, public WithParamInterface<T> {
 //   ASSERT_LT(i, array_size);
 //   ASSERT_GT(records.size(), 0) << "There is no record left.";
 
-#define EXPECT_EQ(val1, val2) \
+#define ASSERT_EQ(val1, val2) \
   EXPECT_PRED_FORMAT2(::testing::internal:: \
                       EqHelper<GTEST_IS_NULL_LITERAL_(val1)>::Compare, \
                       val1, val2)
