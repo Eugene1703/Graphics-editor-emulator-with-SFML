@@ -1,5 +1,2 @@
-﻿  pch.cpp
-C:\Users\Eugene\source\repos\Sample-Test1\packages\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.3\build\native\include\gtest\gtest.h(2000,1): warning C4005: ASSERT_EQ: изменение макроопределения
-C:\Users\Eugene\source\repos\Sample-Test1\packages\Microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.3\build\native\include\gtest\gtest.h(1969): message : см. предыдущее определение "ASSERT_EQ"
-  test.cpp
+﻿  test.cpp
   Sample-Test1.vcxproj -> C:\Users\Eugene\source\repos\Sample-Test1\Debug\Sample-Test1.exe
