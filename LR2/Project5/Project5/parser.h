@@ -20,7 +20,7 @@ public:
     struct answer
     {
     public:
-        int comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y, R, G, B, font, length, orientation;
+        int comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y, R, G, B, font, length, orientation=0, my_orientation[4] = {0, 90,180,270 };
         string text;
         bool check;
         string error = "Помилка: ";
@@ -199,7 +199,11 @@ public:
                     else
                     {
                         my_answer.orientation = strtol(end, &end, 10);
-                        if (my_answer.orientation < 1 || my_answer.orientation >3) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                        if (my_answer.orientation < 1 || my_answer.orientation >4) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                        else 
+                        {
+                            my_answer.orientation = my_answer.my_orientation[my_answer.orientation - 1];
+                        }
                         break;
                     }
                 case GET_WIDTH:

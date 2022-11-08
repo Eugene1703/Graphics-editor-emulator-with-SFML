@@ -6,7 +6,7 @@
 #pragma comment ( lib, "ws2_32.lib" )
 #include <Windows.h>
 #include "parser.h"
-#include"draw.h"
+#include "draw.h"
 using namespace std;
 using namespace sf;
 #define PORT 7777   
@@ -51,6 +51,8 @@ int main(int argc, char* argv[])
         string cmd[1000], cmd_buff[1000];
         int i = 0,outline_th=5;
         RenderWindow window(VideoMode(my_parser.my_answer.width, my_parser.my_answer.height), "Semioshko KCKC");
+        View view;
+        view.setRotation(0);
         while (window.isOpen())
         {
 
@@ -224,6 +226,8 @@ int main(int argc, char* argv[])
                     }
                     case SET_ORIENTATION:
                         cout << "orientation = " << my_parser.my_answer.orientation;
+                        
+                        view.setRotation(my_parser.my_answer.orientation);
                         break;
                     case GET_WIDTH:
                         cout << "Width = " << my_parser.my_answer.width;
@@ -232,7 +236,7 @@ int main(int argc, char* argv[])
                         cout << "Height = " << my_parser.my_answer.height;
                         break;
                     }
-                    if (my_parser.my_answer.comm_id != GET_HEIGHT && my_parser.my_answer.comm_id != GET_WIDTH && my_parser.my_answer.comm_id != SET_ORIENTATION && my_parser.my_answer.comm_id != DRAW_TEXT && my_answer.comm_id != DRAW_IMAGE)
+                    if (my_parser.my_answer.comm_id != GET_HEIGHT && my_parser.my_answer.comm_id != GET_WIDTH && my_parser.my_answer.comm_id != SET_ORIENTATION && my_parser.my_answer.comm_id != DRAW_TEXT && my_parser.my_answer.comm_id != DRAW_IMAGE)
                     {
                         cout << "Color_R = " << my_parser.my_answer.R << endl;
                         cout << "Color_G = " << my_parser.my_answer.G << endl;
@@ -250,6 +254,7 @@ int main(int argc, char* argv[])
             int bsize_;
             bsize_ = strlen(buff_);
             sendto(Socket, &buff_[0], bsize_, 0, (sockaddr*)&client_addr, sizeof(client_addr));
+            window.setView(view);
             window.display();
             i++;
         }

@@ -1,5 +1,4 @@
 #define NOMINMAX
-#include "SFML/Graphics.hpp"
 #include "Rounded_Rectangle_Shape.h"
 using namespace sf;
 RectangleShape draw_pixel(Vector2f position, int r, int g, int b)
