@@ -1,0 +1,129 @@
+﻿  Source.cpp
+C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(34,30): warning C4244: инициализация: преобразование "unsigned int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(38,1): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(18,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(36,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(43,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(43,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(45,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(56,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(63,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(63,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(69,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(70,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(70,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(72,32): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(78,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(79,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(79,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(86,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(86,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(87,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(89,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(89,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(90,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(97,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(97,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(98,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(100,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(100,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(109,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\draw.h(109,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(96,115): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(96,91): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(108,91): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(108,68): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(109,91): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(109,68): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,122): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,99): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,179): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,155): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,122): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,99): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,179): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,155): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(218,103): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(218,80): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(230,65): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Project5.vcxproj -> C:\Users\Eugene\source\repos\Project5\Debug\Project5.exe
