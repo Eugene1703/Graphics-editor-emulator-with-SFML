@@ -2,8 +2,8 @@
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\wingdi.h(1856,1): warning C4005: RGB: изменение макроопределения
 C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\GraphicsLib.h(7): message : см. предыдущее определение "RGB"
 C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(8,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(38,43): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(38,25): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(70,51): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(70,33): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(16,43): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(16,25): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(44,51): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(44,33): warning C4309: аргумент: усечение константного значения
   Client_UDP_GraphLib.vcxproj -> C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Debug\Client_UDP_GraphLib.exe

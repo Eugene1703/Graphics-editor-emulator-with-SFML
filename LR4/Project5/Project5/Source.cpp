@@ -161,45 +161,50 @@ int main(int argc, char* argv[])
                             window.draw(circle);
                             break;
                         }
-                        case DRAW_FILL_CIRCLE:
+                        case DRAW_CHAR:
                         {
                             cout << "x0 = " << my_parser.my_answer.x0 << endl;
                             cout << "y0 = " << my_parser.my_answer.y0 << endl;
-                            cout << "radius = " << my_parser.my_answer.radius << endl;
-                            CircleShape circle = draw_circle(my_parser.my_answer.radius, my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
-                            window.draw(circle);
+                            cout << "size= " << my_parser.my_answer.font << endl;
+                            cout << "char=" << my_parser.my_answer.text << endl;
+                            double bg_w = (my_parser.my_answer.font * my_parser.my_answer.text.length()) / 1.66;
+                            RectangleShape rectangle = draw_rectangle(Vector2f(bg_w, my_parser.my_answer.font), Vector2f(my_parser.my_answer.x0, my_parser.my_answer.y0+4), my_parser.my_answer.bg_r, my_parser.my_answer.bg_g, my_parser.my_answer.bg_b);
+                            Text text = draw_text(my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.font, my_parser.my_answer.text, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
+                            window.draw(rectangle);
+                            window.draw(text);
                             break;
                         }
-                        case DRAW_ROUNDED_RECTANGLE:
+                        case LOAD_SPRITE:
                         {
-                            cout << "x0 = " << my_parser.my_answer.x0 << endl;
-                            cout << "y0 = " << my_parser.my_answer.y0 << endl;
-                            cout << "w = " << my_parser.my_answer.w << endl;
-                            cout << "h = " << my_parser.my_answer.h << endl;
-                            cout << "radius = " << my_parser.my_answer.radius << endl;
-                            RoundedRectangleShape rounded_rect = draw_rounded_rect(my_parser.my_answer.w, my_parser.my_answer.h, my_parser.my_answer.radius, Display_R, Display_G, Display_B, my_parser.my_answer.x0, my_parser.my_answer.y0, outline_th, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
-                            window.draw(rounded_rect);
                             break;
                         }
-                        case DRAW_FILL_ROUNDED_RECTANGLE:
+                        case SHOW_SPRITE:
                         {
-                            cout << "x0 = " << my_parser.my_answer.x0 << endl;
-                            cout << "y0 = " << my_parser.my_answer.y0 << endl;
-                            cout << "w = " << my_parser.my_answer.w << endl;
-                            cout << "h = " << my_parser.my_answer.h << endl;
-                            cout << "radius =" << my_parser.my_answer.radius << endl;
-                            RoundedRectangleShape rounded_rect = draw_rounded_rect(my_parser.my_answer.w, my_parser.my_answer.h, my_parser.my_answer.radius, my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
-                            window.draw(rounded_rect);
+                            int k = 0;
+                            for (int i = 0; i < my_parser.my_answer.w; i++)
+                            {
+                                int x0 = my_parser.my_answer.x0;
+                                for (int j = 0; j < my_parser.my_answer.h; j++)
+                                {
+                                    RectangleShape pixel = draw_pixel(Vector2f(x0, my_parser.my_answer.y0), my_parser.my_answer.data_arr[k], my_parser.my_answer.data_arr[k + 1], my_parser.my_answer.data_arr[k + 2]);
+                                    window.draw(pixel);
+                                    k += 3;
+                                    x0 += 5;
+                                }
+                                my_parser.my_answer.y0 += 5;
+                            }
                             break;
                         }
                         case DRAW_TEXT:
                         {
                             cout << "x0 = " << my_parser.my_answer.x0 << endl;
                             cout << "y0 = " << my_parser.my_answer.y0 << endl;
-                            cout << "font= " << my_parser.my_answer.font << endl;
-                            cout << "length= " << my_parser.my_answer.length << endl;
+                            cout << "size= " << my_parser.my_answer.font << endl;
                             cout << "text=" << my_parser.my_answer.text << endl;
+                            double bg_w = (my_parser.my_answer.font * my_parser.my_answer.text.length()) / 1.66;
+                            RectangleShape rectangle = draw_rectangle(Vector2f(bg_w, my_parser.my_answer.font), Vector2f(my_parser.my_answer.x0, my_parser.my_answer.y0 + 4), my_parser.my_answer.bg_r, my_parser.my_answer.bg_g, my_parser.my_answer.bg_b);
                             Text text = draw_text(my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.font, my_parser.my_answer.text, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
+                            window.draw(rectangle);
                             window.draw(text);
                             break;
                         }
@@ -236,7 +241,7 @@ int main(int argc, char* argv[])
                             cout << "Height = " << my_parser.my_answer.height;
                             break;
                         }
-                        if (my_parser.my_answer.comm_id != GET_HEIGHT && my_parser.my_answer.comm_id != GET_WIDTH && my_parser.my_answer.comm_id != SET_ORIENTATION && my_parser.my_answer.comm_id != DRAW_TEXT && my_parser.my_answer.comm_id != DRAW_IMAGE)
+                        if (my_parser.my_answer.comm_id != DRAW_CHAR && my_parser.my_answer.comm_id != GET_HEIGHT && my_parser.my_answer.comm_id != GET_WIDTH && my_parser.my_answer.comm_id != SET_ORIENTATION && my_parser.my_answer.comm_id != DRAW_TEXT && my_parser.my_answer.comm_id != SHOW_SPRITE && my_parser.my_answer.comm_id != LOAD_SPRITE)
                         {
                             cout << "Color_R = " << my_parser.my_answer.R << endl;
                             cout << "Color_G = " << my_parser.my_answer.G << endl;
@@ -250,13 +255,31 @@ int main(int argc, char* argv[])
                     cout << err << endl;
                     strcpy(buff_, err.c_str());
                 }
-                else strcpy(buff_, "\nКоманда виконана\n\n");
-                int bsize_;
-                bsize_ = strlen(buff_);
-                sendto(Socket, &buff_[0], bsize_, 0, (sockaddr*)&client_addr, sizeof(client_addr));
-                window.setView(view);
-                window.display();
-                i++;
+                else
+                    if (my_parser.my_answer.comm_id == DRAW_CHAR || my_parser.my_answer.comm_id == DRAW_TEXT)
+                    {
+                        int x_ = (my_parser.my_answer.font * my_parser.my_answer.text.length()) / 1.6;
+                        string b = to_string(x_);
+                        strcpy(buff_, b.c_str());
+                        cout << buff_ << endl;
+                        int bsize_;
+                        bsize_ = strlen(buff_);
+                        sendto(Socket, &buff_[0], bsize_, 0, (sockaddr*)&client_addr, sizeof(client_addr));
+                        window.setView(view);
+                        window.display();
+                        i++;
+                    }
+                    else 
+                    {
+                        strcpy(buff_, "\nКоманда виконана\n\n");
+                        int bsize_;
+                        bsize_ = strlen(buff_);
+                        sendto(Socket, &buff_[0], bsize_, 0, (sockaddr*)&client_addr, sizeof(client_addr));
+                        window.setView(view);
+                        window.display();
+                        i++;
+                    }
+                
             }
         }
     }

@@ -1,4 +1,6 @@
 ﻿  Source.cpp
+C:\Users\Eugene\source\repos\Project5\Project5\parser.h(151,43): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Eugene\source\repos\Project5\Project5\parser.h(194,43): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(34,30): warning C4244: инициализация: преобразование "unsigned int" в "float", возможна потеря данных
 C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(38,1): warning C4305: инициализация: усечение из "double" в "float"
 C:\Users\Eugene\source\repos\Project5\Project5\draw.h(18,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
@@ -115,15 +117,66 @@ C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,155): warning C424
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(218,103): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(171,105): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(218,80): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(171,80): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(230,65): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(171,168): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(171,141): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(189,103): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(189,80): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(205,105): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(205,80): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(205,169): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(205,141): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(223,103): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(223,80): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(235,65): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(261,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
   Project5.vcxproj -> C:\Users\Eugene\source\repos\Project5\Debug\Project5.exe

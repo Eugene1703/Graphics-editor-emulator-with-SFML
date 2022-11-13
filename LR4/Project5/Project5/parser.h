@@ -5,8 +5,8 @@ const unsigned char CLEAR_DISPLAY = 0,
 DRAW_PIXEL = 1, DRAW_LINE = 2,
 DRAW_RECTANGLE = 3, DRAW_FILL_RECTANGLE = 4,
 DRAW_ELLIPSE = 5, DRAW_FILL_ELLIPSE = 6,
-DRAW_CIRCLE = 7, DRAW_FILL_CIRCLE = 8,
-DRAW_ROUNDED_RECTANGLE = 9, DRAW_FILL_ROUNDED_RECTANGLE = 10,
+DRAW_CIRCLE = 7, DRAW_CHAR = 8,
+LOAD_SPRITE = 9, SHOW_SPRITE = 10,
 DRAW_TEXT = 11, DRAW_IMAGE = 12, SET_ORIENTATION = 13, GET_WIDTH = 14, GET_HEIGHT = 15;
 class parser
 {
@@ -20,7 +20,7 @@ public:
     struct answer
     {
     public:
-        int comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y, R, G, B, font, length, orientation=0, my_orientation[4] = {0, 90,180,270 };
+        int comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y,bg_r,bg_g,bg_b, R, G, B, font, length, orientation=0, my_orientation[4] = {0, 90,180,270 };
         string text;
         bool check;
         string error = "Помилка: ";
@@ -134,39 +134,8 @@ public:
                         my_answer.radius = strtol(end, &end, 10);
                         break;
                     }
-                case DRAW_FILL_CIRCLE:
-                    if (my_count != 7) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
-                    else
-                    {
-                        my_answer.x0 = strtol(end, &end, 10);
-                        my_answer.y0 = strtol(end, &end, 10);
-                        my_answer.radius = strtol(end, &end, 10);
-                        break;
-                    }
-                case DRAW_ROUNDED_RECTANGLE:
-                    if (my_count != 9) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
-                    else
-                    {
-                        my_answer.x0 = strtol(end, &end, 10);
-                        my_answer.y0 = strtol(end, &end, 10);
-                        my_answer.w = strtol(end, &end, 10);
-                        my_answer.h = strtol(end, &end, 10);
-                        my_answer.radius = strtol(end, &end, 10);
-                        break;
-                    }
-                case DRAW_FILL_ROUNDED_RECTANGLE:
-                    if (my_count != 9) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
-                    else
-                    {
-                        my_answer.x0 = strtol(end, &end, 10);
-                        my_answer.y0 = strtol(end, &end, 10);
-                        my_answer.w = strtol(end, &end, 10);
-                        my_answer.h = strtol(end, &end, 10);
-                        my_answer.radius = strtol(end, &end, 10);
-                        break;
-                    }
-                case DRAW_TEXT:
-                    if (my_count != 9) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                case DRAW_CHAR:
+                    if (my_count != 11) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
                     else
                     {
                         my_answer.x0 = strtol(end, &end, 10);
@@ -174,10 +143,62 @@ public:
                         my_answer.R = strtol(end, &end, 16);
                         my_answer.G = strtol(end, &end, 16);
                         my_answer.B = strtol(end, &end, 16);
+                        my_answer.bg_r = strtol(end, &end, 16);
+                        my_answer.bg_g = strtol(end, &end, 16);
+                        my_answer.bg_b = strtol(end, &end, 16);
                         my_answer.font = strtol(end, &end, 10);
-                        my_answer.length = strtol(end, &end, 10);
                         my_answer.text = end;
-
+                        for (int i = 0; i < my_answer.text.length(); i++)
+                        {
+                            if (my_answer.text[i] == ' ')
+                            {
+                                my_answer.text.erase(i, 1);
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                case LOAD_SPRITE:
+                    {
+                        my_answer.w = strtol(end, &end, 10);
+                        my_answer.h = strtol(end, &end, 10);
+                        my_answer.data_length = my_answer.w * my_answer.h * 3;
+                        for (int i = 0; i < my_answer.data_length; i++)
+                        {
+                            my_answer.data_arr[i] = strtol(end, &end, 16);
+                        }
+                        break;
+                    }
+                case SHOW_SPRITE:
+                    if (my_count != 3) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                    else
+                    {
+                        my_answer.x0 = strtol(end, &end, 10);
+                        my_answer.y0 = strtol(end, &end, 10);
+                        break;
+                    }
+                case DRAW_TEXT:
+                    if (my_count != 11) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                    else
+                    {
+                        my_answer.x0 = strtol(end, &end, 10);
+                        my_answer.y0 = strtol(end, &end, 10);
+                        my_answer.R = strtol(end, &end, 16);
+                        my_answer.G = strtol(end, &end, 16);
+                        my_answer.B = strtol(end, &end, 16);
+                        my_answer.bg_r = strtol(end, &end, 16);
+                        my_answer.bg_g = strtol(end, &end, 16);
+                        my_answer.bg_b = strtol(end, &end, 16);
+                        my_answer.font = strtol(end, &end, 10);
+                        my_answer.text = end;
+                        for (int i = 0; i < my_answer.text.length(); i++)
+                        {
+                            if (my_answer.text[i] == ' ')
+                            {
+                                my_answer.text.erase(i, 1);
+                                break;
+                            }
+                        }
                     }
                     break;
                 case DRAW_IMAGE:
@@ -217,7 +238,7 @@ public:
                 }
                 if (my_answer.check)
                 {
-                    if (my_answer.comm_id != GET_HEIGHT && my_answer.comm_id != GET_WIDTH && my_answer.comm_id != SET_ORIENTATION && my_answer.comm_id != DRAW_TEXT && my_answer.comm_id != DRAW_IMAGE) {
+                    if (my_answer.comm_id != GET_HEIGHT && my_answer.comm_id != GET_WIDTH && my_answer.comm_id != SET_ORIENTATION && my_answer.comm_id != DRAW_TEXT && my_answer.comm_id != DRAW_IMAGE && my_answer.comm_id != SHOW_SPRITE && my_answer.comm_id != LOAD_SPRITE && my_answer.comm_id != DRAW_CHAR) {
                         my_answer.R = strtol(end, &end, 16);
                         my_answer.G = strtol(end, &end, 16);
                         my_answer.B = strtol(end, &end, 16);

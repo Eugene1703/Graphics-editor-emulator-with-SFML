@@ -29,5 +29,8 @@
     <ClInclude Include="draw.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="line.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
