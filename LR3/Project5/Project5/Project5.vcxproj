@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="draw.h" />
+    <ClInclude Include="line.h" />
     <ClInclude Include="parser.h" />
     <ClInclude Include="Rounded_Rectangle_Shape.h" />
   </ItemGroup>

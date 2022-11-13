@@ -1,22 +1,16 @@
 ﻿  Client_UDP_GraphLib.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\wingdi.h(1856,1): warning C4005: RGB: изменение макроопределения
 C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\GraphicsLib.h(7): message : см. предыдущее определение "RGB"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(31,43): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(31,25): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(34,57): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(34,39): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(40,46): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(40,30): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(43,58): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(43,40): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(46,58): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(46,41): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(49,57): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(49,39): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(52,59): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(52,34): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(55,76): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(55,51): warning C4309: аргумент: усечение константного значения
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(58,68): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
-C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(58,42): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(9,91): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(9,64): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(10,106): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(10,79): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(13,57): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(13,39): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(14,57): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(14,39): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(16,58): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(16,40): warning C4309: аргумент: усечение константного значения
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(17,58): warning C4305: аргумент: усечение из "unsigned long" в "uint_least16_t"
+C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Client_UDP_GraphLib\Client_UDP_GraphLib.cpp(17,41): warning C4309: аргумент: усечение константного значения
   Client_UDP_GraphLib.vcxproj -> C:\Users\Eugene\source\repos\Client_UDP_GraphLib\Debug\Client_UDP_GraphLib.exe
