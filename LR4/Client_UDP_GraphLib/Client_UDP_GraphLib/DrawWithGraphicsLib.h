@@ -92,20 +92,23 @@ public:DrawWithGraphicsLib(uint_least16_t w, uint_least16_t h) : GraphicsLib(w, 
 	  }
 	  int_least16_t drawText(int_least16_t x, int_least16_t y, const char* s, uint_least16_t color, uint_least16_t bg, uint_least8_t size)override
 	  {
-		  snprintf(buff, length, "B %d %d %x %x %x %x %x %x %d %s", x, y, red888(color), green888(color), blue888(color), red888(bg), green888(bg), blue888(bg), size, s);
-		  send(buff);
+		  size_t new_size = snprintf(NULL, 0, "B %d %d %x %x %x %x %x %x %d %s", x, y, red888(color), green888(color), blue888(color), red888(bg), green888(bg), blue888(bg), size, s) + sizeof('\0');
+		  char*new_buff = new char[new_size];
+		  snprintf(new_buff, new_size, "B %d %d %x %x %x %x %x %x %d %s", x, y, red888(color), green888(color), blue888(color), red888(bg), green888(bg), blue888(bg), size, s);
+		  send(new_buff);
 		  recvfrom(my_sock, answer, sizeof(answer) - 1, 0, (sockaddr*)&dest_addr, &dest_addr_size);
 		  int x_ = strtol(answer, &end, 10);
+		  delete[] new_buff;
 		  return x_;
 	  }
 	  void loadSprite(uint_least8_t index, int_least16_t width, int_least16_t height, char* data)
 	  {
-		  snprintf(buff, length, "9 %d %d %s", width, height, data);
+		  snprintf(buff, length, "9 %d %d %d %s", index,width, height, data);
 		  send(buff);
 	  }
 	  void showSprite(uint_least8_t index, uint_least16_t x, uint_least16_t y)
 	  {
-		  snprintf(buff, length, "A %d %d", x, y);
+		  snprintf(buff, length, "A %d %d %d",index, x, y);
 		  send(buff);
 	  }
 	  ~DrawWithGraphicsLib() 

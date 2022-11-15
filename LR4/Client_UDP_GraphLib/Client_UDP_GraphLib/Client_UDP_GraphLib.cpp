@@ -1,5 +1,4 @@
-﻿
-#include "DrawWithGraphicsLib.h"
+﻿#include "DrawWithGraphicsLib.h"
 #include <ctime>
 using namespace std;
 const char TEAM_blue = 0, TEAM_Yellow = 1;
