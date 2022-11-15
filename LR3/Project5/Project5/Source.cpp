@@ -270,7 +270,7 @@ int main(int argc, char* argv[])
                 else
                     if (my_parser.my_answer.comm_id == DRAW_CHAR || my_parser.my_answer.comm_id == DRAW_TEXT)
                     {
-                        int x_ = my_parser.my_answer.x0 + my_parser.my_answer.font * my_parser.my_answer.text.length();
+                        int x_ = my_parser.my_answer.x0 + (my_parser.my_answer.font * my_parser.my_answer.text.length()) / 1.66;
                         string b = to_string(x_);
                         strcpy(buff_, b.c_str());
                         cout << buff_ << endl;

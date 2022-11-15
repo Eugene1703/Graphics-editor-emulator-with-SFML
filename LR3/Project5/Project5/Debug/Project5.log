@@ -1,6 +1,6 @@
 ﻿  Source.cpp
 C:\Users\Eugene\source\repos\Project5\Project5\parser.h(158,43): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Eugene\source\repos\Project5\Project5\parser.h(204,43): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Eugene\source\repos\Project5\Project5\parser.h(203,43): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(34,30): warning C4244: инициализация: преобразование "unsigned int" в "float", возможна потеря данных
 C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(38,1): warning C4305: инициализация: усечение из "double" в "float"
 C:\Users\Eugene\source\repos\Project5\Project5\draw.h(18,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
@@ -178,4 +178,5 @@ C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(235,80): warning C4244
               T=float
           ]
 C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(247,65): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(273,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
   Project5.vcxproj -> C:\Users\Eugene\source\repos\Project5\Debug\Project5.exe
