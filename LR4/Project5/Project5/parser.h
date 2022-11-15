@@ -34,7 +34,7 @@ public:
         int w, h;
     };
     answer my_answer;
-    sprite my_sprite[100];
+    sprite my_sprite[255];
     int count(char* buff)
     {
         string str = buff;
@@ -170,8 +170,9 @@ public:
                         my_answer.sprite_index = strtol(end, &end, 10);
                         int ind = my_answer.sprite_index-1;
                         my_sprite[ind].w = strtol(end, &end, 10);
-                        my_sprite[ind].h = strtol(end, &end, 10);
+                        my_sprite[ind].h = strtol(end, &end, 10);          
                         my_sprite[ind].data_length = my_sprite[ind].w * my_sprite[ind].h * 3;
+                        my_sprite[ind].data_arr = new int[my_sprite[ind].data_length];
                         for (int i = 0; i < my_sprite[ind].data_length; i++)
                         {
                             my_sprite[ind].data_arr[i] = strtol(end, &end, 16);
@@ -188,8 +189,6 @@ public:
                         break;
                     }
                 case DRAW_TEXT:
-                    if (my_count != 11) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
-                    else
                     {
                         my_answer.x0 = strtol(end, &end, 10);
                         my_answer.y0 = strtol(end, &end, 10);
