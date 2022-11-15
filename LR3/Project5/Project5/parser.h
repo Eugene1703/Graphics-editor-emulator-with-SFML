@@ -15,19 +15,26 @@ public:
     {
         my_answer.height = h;
         my_answer.width = w;
+        
     }
     char* end;
     struct answer
     {
     public:
-        int comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y,bg_r,bg_g,bg_b, R, G, B, font, length, orientation=0, my_orientation[4] = {0, 90,180,270 };
+        int sprite_index, comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y,bg_r,bg_g,bg_b, R, G, B, font, length, orientation=0, my_orientation[4] = {0, 90,180,270 };
         string text;
         bool check;
         string error = "Помилка: ";
+        
+    };
+    struct sprite 
+    {
         int data_length;
         int* data_arr = new int[data_length];
+        int w, h;
     };
     answer my_answer;
+    sprite my_sprite[100];
     int count(char* buff)
     {
         string str = buff;
@@ -135,6 +142,8 @@ public:
                         break;
                     }
                 case DRAW_CHAR:
+                    if (my_count != 11) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                    else
                     {
                         my_answer.x0 = strtol(end, &end, 10);
                         my_answer.y0 = strtol(end, &end, 10);
@@ -158,22 +167,29 @@ public:
                     }
                 case LOAD_SPRITE:
                     {
-                        my_answer.w = strtol(end, &end, 10);
-                        my_answer.h = strtol(end, &end, 10);
-                        my_answer.data_length = my_answer.w * my_answer.h * 3;
-                        for (int i = 0; i < my_answer.data_length; i++)
+                        my_answer.sprite_index = strtol(end, &end, 10);
+                        int ind = my_answer.sprite_index-1;
+                        my_sprite[ind].w = strtol(end, &end, 10);
+                        my_sprite[ind].h = strtol(end, &end, 10);
+                        my_sprite[ind].data_length = my_sprite[ind].w * my_sprite[ind].h * 3;
+                        for (int i = 0; i < my_sprite[ind].data_length; i++)
                         {
-                            my_answer.data_arr[i] = strtol(end, &end, 16);
+                            my_sprite[ind].data_arr[i] = strtol(end, &end, 16);
                         }
                         break;
                     }
                 case SHOW_SPRITE:
+                    if (my_count != 4) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                    else
                     {
+                        my_answer.sprite_index = strtol(end, &end, 10);
                         my_answer.x0 = strtol(end, &end, 10);
                         my_answer.y0 = strtol(end, &end, 10);
                         break;
                     }
                 case DRAW_TEXT:
+                    if (my_count != 11) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                    else
                     {
                         my_answer.x0 = strtol(end, &end, 10);
                         my_answer.y0 = strtol(end, &end, 10);
@@ -197,15 +213,17 @@ public:
                     break;
                 case DRAW_IMAGE:
                     {
+                        my_answer.sprite_index = strtol(end, &end, 10);
+                        int ind = my_answer.sprite_index - 1;
                         my_answer.x0 = strtol(end, &end, 10);
                         my_answer.y0 = strtol(end, &end, 10);
                         my_answer.w = strtol(end, &end, 10);
                         my_answer.h = strtol(end, &end, 10);
-                        if (my_count != my_answer.w*my_answer.h*3 + 5) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
-                        my_answer.data_length = my_answer.w * my_answer.h * 3;
-                        for (int i = 0; i < my_answer.data_length; i++) 
+                        if (my_count != my_answer.w*my_answer.h*3 + 6) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                        my_sprite[ind].data_length = my_answer.w * my_answer.h * 3;
+                        for (int i = 0; i < my_sprite[ind].data_length; i++) 
                         {
-                            my_answer.data_arr[i] = strtol(end, &end, 16);
+                            my_sprite[ind].data_arr[i] = strtol(end, &end, 16);
                         }
                         break;
                     }

@@ -176,17 +176,28 @@ int main(int argc, char* argv[])
                         }
                         case LOAD_SPRITE:
                         {
+                            cout << "Завантажено спрайт з індексом: " << my_parser.my_answer.sprite_index << endl;
+                            cout << "w = " << my_parser.my_answer.w << endl;
+                            cout << "h = " << my_parser.my_answer.h << endl;
+                            cout << "data: " << endl;
+                            int ind = my_parser.my_answer.sprite_index - 1;
+                            for (int i = 0; i < my_parser.my_sprite[ind].data_length; i++)
+                            {
+                                cout << my_parser.my_sprite[ind].data_arr[i] << " ";
+                            }
+                            cout << endl;
                             break;
                         }
                         case SHOW_SPRITE:
                         {
+                            int ind = my_parser.my_answer.sprite_index-1;
                             int k = 0;
-                            for (int i = 0; i < my_parser.my_answer.w; i++)
+                            for (int i = 0; i < my_parser.my_sprite[ind].w; i++)
                             {
                                 int x0 = my_parser.my_answer.x0;
-                                for (int j = 0; j < my_parser.my_answer.h; j++)
+                                for (int j = 0; j < my_parser.my_sprite[ind].h; j++)
                                 {
-                                    RectangleShape pixel = draw_pixel(Vector2f(x0, my_parser.my_answer.y0), my_parser.my_answer.data_arr[k], my_parser.my_answer.data_arr[k + 1], my_parser.my_answer.data_arr[k + 2]);
+                                    RectangleShape pixel = draw_pixel(Vector2f(x0, my_parser.my_answer.y0), my_parser.my_sprite[ind].data_arr[k], my_parser.my_sprite[ind].data_arr[k + 1], my_parser.my_sprite[ind].data_arr[k + 2]);
                                     window.draw(pixel);
                                     k += 3;
                                     x0 += 5;
@@ -210,6 +221,7 @@ int main(int argc, char* argv[])
                         }
                         case DRAW_IMAGE:
                         {
+                            int ind = my_parser.my_answer.sprite_index;
                             cout << "x0 = " << my_parser.my_answer.x0 << endl;
                             cout << "y0 = " << my_parser.my_answer.y0 << endl;
                             cout << "w = " << my_parser.my_answer.w << endl;
@@ -220,7 +232,7 @@ int main(int argc, char* argv[])
                                 int x0 = my_parser.my_answer.x0;
                                 for (int j = 0; j < my_parser.my_answer.h; j++)
                                 {
-                                    RectangleShape pixel = draw_pixel(Vector2f(x0, my_parser.my_answer.y0), my_parser.my_answer.data_arr[k], my_parser.my_answer.data_arr[k + 1], my_parser.my_answer.data_arr[k + 2]);
+                                    RectangleShape pixel = draw_pixel(Vector2f(x0, my_parser.my_answer.y0), my_parser.my_sprite[ind].data_arr[k], my_parser.my_sprite[ind].data_arr[k + 1], my_parser.my_sprite[ind].data_arr[k + 2]);
                                     window.draw(pixel);
                                     k += 3;
                                     x0 += 5;
@@ -258,7 +270,7 @@ int main(int argc, char* argv[])
                 else
                     if (my_parser.my_answer.comm_id == DRAW_CHAR || my_parser.my_answer.comm_id == DRAW_TEXT)
                     {
-                        int x_ = (my_parser.my_answer.font * my_parser.my_answer.text.length()) / 1.6;
+                        int x_ = my_parser.my_answer.x0 + my_parser.my_answer.font * my_parser.my_answer.text.length();
                         string b = to_string(x_);
                         strcpy(buff_, b.c_str());
                         cout << buff_ << endl;
