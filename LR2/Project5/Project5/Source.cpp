@@ -128,7 +128,7 @@ int main(int argc, char* argv[])
                         cout << "y0 = " << my_parser.my_answer.y0 << endl;
                         cout << "w = " << my_parser.my_answer.w << endl;
                         cout << "h = " << my_parser.my_answer.h << endl;
-                        RectangleShape rectangle = draw_rectangle(Vector2f(my_parser.my_answer.w, my_parser.my_answer.h), Vector2f(my_parser.my_answer.x0, my_parser.my_answer.y0), my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
+                        RectangleShape rectangle = draw_rectangle(Vector2f(my_parser.my_answer.w, my_parser.my_answer.h), Vector2f(my_parser.my_answer.x0, my_parser.my_answer.y0), my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B,outline_th);
                         window.draw(rectangle);
                         break;
                     }
@@ -148,7 +148,7 @@ int main(int argc, char* argv[])
                         cout << "y0 = " << my_parser.my_answer.y0 << endl;
                         cout << "radius_x = " << my_parser.my_answer.radius_x << endl;
                         cout << "radius_y = " << my_parser.my_answer.radius_y << endl;
-                        ConvexShape ellipse = draw_ellipse(my_parser.my_answer.radius_x, my_parser.my_answer.radius_y, my_parser.my_answer.x0, my_parser.my_answer.y0,my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
+                        ConvexShape ellipse = draw_ellipse(my_parser.my_answer.radius_x, my_parser.my_answer.radius_y, my_parser.my_answer.x0, my_parser.my_answer.y0,my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B,outline_th);
                         window.draw(ellipse);
                         break;
                     }
@@ -157,7 +157,7 @@ int main(int argc, char* argv[])
                         cout << "x0 = " << my_parser.my_answer.x0 << endl;
                         cout << "y0 = " << my_parser.my_answer.x0 << endl;
                         cout << "radius = " << my_parser.my_answer.radius << endl;
-                        CircleShape circle = draw_circle(my_parser.my_answer.radius, my_parser.my_answer.x0, my_parser.my_answer.y0, Display_R, Display_G, Display_B, outline_th, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
+                        CircleShape circle = draw_circle(my_parser.my_answer.radius-outline_th, my_parser.my_answer.x0, my_parser.my_answer.y0, Display_R, Display_G, Display_B, outline_th, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
                         window.draw(circle);
                         break;
                     }
@@ -166,7 +166,7 @@ int main(int argc, char* argv[])
                         cout << "x0 = " << my_parser.my_answer.x0 << endl;
                         cout << "y0 = " << my_parser.my_answer.y0 << endl;
                         cout << "radius = " << my_parser.my_answer.radius << endl;
-                        CircleShape circle = draw_circle(my_parser.my_answer.radius, my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
+                        CircleShape circle = draw_circle(my_parser.my_answer.radius, my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B,outline_th);
                         window.draw(circle);
                         break;
                     }
@@ -188,7 +188,7 @@ int main(int argc, char* argv[])
                         cout << "w = " << my_parser.my_answer.w << endl;
                         cout << "h = " << my_parser.my_answer.h << endl;
                         cout << "radius =" << my_parser.my_answer.radius << endl;
-                        RoundedRectangleShape rounded_rect = draw_rounded_rect(my_parser.my_answer.w, my_parser.my_answer.h, my_parser.my_answer.radius, my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B);
+                        RoundedRectangleShape rounded_rect = draw_rounded_rect(my_parser.my_answer.w, my_parser.my_answer.h, my_parser.my_answer.radius, my_parser.my_answer.x0, my_parser.my_answer.y0, my_parser.my_answer.R, my_parser.my_answer.G, my_parser.my_answer.B,outline_th);
                         window.draw(rounded_rect);
                         break;
                     }

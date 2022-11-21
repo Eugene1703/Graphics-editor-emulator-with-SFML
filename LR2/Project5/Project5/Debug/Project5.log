@@ -1,129 +1,117 @@
 ﻿  Source.cpp
-C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(34,30): warning C4244: инициализация: преобразование "unsigned int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\Rounded_Rectangle_Shape.h(38,1): warning C4305: инициализация: усечение из "double" в "float"
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(17,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(35,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(42,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(42,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(44,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(55,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(62,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(62,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(68,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(69,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(69,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(71,32): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(77,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(78,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(78,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(85,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(53,39): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(74,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(75,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(82,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(83,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(84,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(85,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(92,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(93,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(94,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(95,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(102,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(103,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(104,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(105,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(112,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(113,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(114,52): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(115,52): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(122,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(123,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(124,52): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(125,52): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(132,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(133,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(134,50): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(141,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(142,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(143,50): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(150,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(151,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(152,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(153,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(154,50): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(161,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(162,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(163,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(164,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(165,50): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(172,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(173,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(174,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(175,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(176,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(177,48): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(178,50): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(185,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(186,46): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(187,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(188,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(201,55): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(221,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(222,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\parser.h(223,45): warning C4244: =: преобразование "long" в "int_least16_t", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Rounded_Rectangle_Shape.h(34,30): warning C4244: инициализация: преобразование "unsigned int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Rounded_Rectangle_Shape.h(38,1): warning C4305: инициализация: усечение из "double" в "float"
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(17,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(26,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(37,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(44,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(44,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(46,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(57,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(64,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(64,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(66,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(72,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(73,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(73,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(75,32): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(81,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(82,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(82,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(84,32): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(91,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(85,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(91,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(86,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(88,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(88,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(89,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(96,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(92,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(94,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(94,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(95,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(102,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(96,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(102,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(97,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(99,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(99,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(109,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\draw.h(109,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(96,111): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(103,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(105,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(105,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(106,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(117,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\draw.h(117,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Source.cpp(87,109): warning C4244: аргумент: преобразование "int_least16_t" в "sf::Uint8", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Source.cpp(87,86): warning C4244: аргумент: преобразование "int_least16_t" в "sf::Uint8", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Source.cpp(87,63): warning C4244: аргумент: преобразование "int_least16_t" в "sf::Uint8", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Source.cpp(111,110): warning C4244: аргумент: преобразование "int_least16_t" в "sf::Uint8", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Source.cpp(111,87): warning C4244: аргумент: преобразование "int_least16_t" в "sf::Uint8", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Source.cpp(111,64): warning C4244: аргумент: преобразование "int_least16_t" в "sf::Uint8", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Project5\Source.cpp(218,76): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(96,87): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(108,87): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(108,64): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(109,87): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(109,64): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,118): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,95): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,175): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(121,151): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,118): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,95): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,175): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(131,151): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(218,99): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(218,76): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-C:\Users\Eugene\source\repos\Project5\Project5\Source.cpp(230,61): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  Project5.vcxproj -> C:\Users\Eugene\source\repos\Project5\Debug\Project5.exe
+  Project5.vcxproj -> X:\КСКС\KCKC_repos\KCKC_Semishko\LR2\Project5\Debug\Project5.exe
