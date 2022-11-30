@@ -7,7 +7,7 @@ int main()
     srand(time(NULL));
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    DrawWithGraphicsLib draw(1280, 720);
+    DrawWithGraphicsLib draw;
     int x0 = 10, font = 24,width = draw.getWidth();
     Sleep(1000);
     while (true) 

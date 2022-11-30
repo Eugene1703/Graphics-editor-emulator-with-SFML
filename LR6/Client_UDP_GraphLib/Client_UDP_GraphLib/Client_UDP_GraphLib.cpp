@@ -7,7 +7,7 @@ int main()
     srand(time(NULL));
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
-    DrawWithGraphicsLib draw(1280, 720);
+    DrawWithGraphicsLib draw;
     cout << "width= " << draw.getWidth() << endl;
     cout << "height= " << draw.getHeight() << endl;
     draw.setOrientation(4);

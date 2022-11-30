@@ -14,19 +14,11 @@
 using namespace std;
 class DrawWithGraphicsLib : public GraphicsLib
 {
-public:DrawWithGraphicsLib(uint_least16_t w, uint_least16_t h) : GraphicsLib(w, h)
+public:DrawWithGraphicsLib()
 {
-
-	if (WSAStartup(0x202, (WSADATA*)&buff[0]))
+	if (!connect(buff, &my_sock))
 	{
-		printf("WSAStartup error: %d\n", WSAGetLastError());
-	}
-
-	my_sock = socket(AF_INET, SOCK_DGRAM, 0);
-	if (my_sock == INVALID_SOCKET)
-	{
-		printf("socket() error: %d\n", WSAGetLastError());
-		WSACleanup();
+		exit(0);
 	}
 	HOSTENT* hst;
 	dest_addr;
@@ -39,6 +31,23 @@ public:DrawWithGraphicsLib(uint_least16_t w, uint_least16_t h) : GraphicsLib(w, 
 			dest_addr.sin_addr.s_addr = ((unsigned long**)
 				hst->h_addr_list)[0][0];
 }
+	  bool connect(char* buff, SOCKET* my_sock)
+	  {
+		  if (WSAStartup(0x202, (WSADATA*)&buff[0]))
+		  {
+			  printf("WSAStartup error: %d\n", WSAGetLastError());
+			  return false;
+		  }
+
+		  *my_sock = socket(AF_INET, SOCK_DGRAM, 0);
+		  if (*my_sock == INVALID_SOCKET)
+		  {
+			  printf("socket() error: %d\n", WSAGetLastError());
+			  WSACleanup();
+			  return false;
+		  }
+		  return true;
+	  }
 	  int_least16_t getWidth()
 	  {
 		  snprintf(buff, length, "E");
