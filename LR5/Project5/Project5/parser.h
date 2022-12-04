@@ -15,19 +15,19 @@ public:
     {
         my_answer.height = h;
         my_answer.width = w;
-        
+
     }
     char* end;
     struct answer
     {
     public:
-        int sprite_index, comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y,bg_r,bg_g,bg_b, R, G, B, font, length, orientation=0, my_orientation[4] = {0, 90,180,270 };
+        int sprite_index, comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y, bg_r, bg_g, bg_b, R, G, B, font, length, orientation = 0, my_orientation[4] = { 0, 90,180,270 };
         string text;
         bool check;
         string error = "Помилка: ";
-        
+
     };
-    struct sprite 
+    struct sprite
     {
         int data_length;
         int* data_arr = new int[data_length];
@@ -166,19 +166,19 @@ public:
                         break;
                     }
                 case LOAD_SPRITE:
+                {
+                    my_answer.sprite_index = strtol(end, &end, 10);
+                    int ind = my_answer.sprite_index - 1;
+                    my_sprite[ind].w = strtol(end, &end, 10);
+                    my_sprite[ind].h = strtol(end, &end, 10);
+                    my_sprite[ind].data_length = my_sprite[ind].w * my_sprite[ind].h * 3;
+                    my_sprite[ind].data_arr = new int[my_sprite[ind].data_length];
+                    for (int i = 0; i < my_sprite[ind].data_length; i++)
                     {
-                        my_answer.sprite_index = strtol(end, &end, 10);
-                        int ind = my_answer.sprite_index-1;
-                        my_sprite[ind].w = strtol(end, &end, 10);
-                        my_sprite[ind].h = strtol(end, &end, 10);          
-                        my_sprite[ind].data_length = my_sprite[ind].w * my_sprite[ind].h * 3;
-                        my_sprite[ind].data_arr = new int[my_sprite[ind].data_length];
-                        for (int i = 0; i < my_sprite[ind].data_length; i++)
-                        {
-                            my_sprite[ind].data_arr[i] = strtol(end, &end, 16);
-                        }
-                        break;
+                        my_sprite[ind].data_arr[i] = strtol(end, &end, 16);
                     }
+                    break;
+                }
                 case SHOW_SPRITE:
                     if (my_count != 4) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
                     else
@@ -189,50 +189,50 @@ public:
                         break;
                     }
                 case DRAW_TEXT:
+                {
+                    my_answer.x0 = strtol(end, &end, 10);
+                    my_answer.y0 = strtol(end, &end, 10);
+                    my_answer.R = strtol(end, &end, 16);
+                    my_answer.G = strtol(end, &end, 16);
+                    my_answer.B = strtol(end, &end, 16);
+                    my_answer.bg_r = strtol(end, &end, 16);
+                    my_answer.bg_g = strtol(end, &end, 16);
+                    my_answer.bg_b = strtol(end, &end, 16);
+                    my_answer.font = strtol(end, &end, 10);
+                    my_answer.text = end;
+                    for (int i = 0; i < my_answer.text.length(); i++)
                     {
-                        my_answer.x0 = strtol(end, &end, 10);
-                        my_answer.y0 = strtol(end, &end, 10);
-                        my_answer.R = strtol(end, &end, 16);
-                        my_answer.G = strtol(end, &end, 16);
-                        my_answer.B = strtol(end, &end, 16);
-                        my_answer.bg_r = strtol(end, &end, 16);
-                        my_answer.bg_g = strtol(end, &end, 16);
-                        my_answer.bg_b = strtol(end, &end, 16);
-                        my_answer.font = strtol(end, &end, 10);
-                        my_answer.text = end;
-                        for (int i = 0; i < my_answer.text.length(); i++)
+                        if (my_answer.text[i] == ' ')
                         {
-                            if (my_answer.text[i] == ' ')
-                            {
-                                my_answer.text.erase(i, 1);
-                                break;
-                            }
+                            my_answer.text.erase(i, 1);
+                            break;
                         }
+                    }
+                }
+                break;
+                case DRAW_IMAGE:
+                {
+                    my_answer.sprite_index = strtol(end, &end, 10);
+                    int ind = my_answer.sprite_index - 1;
+                    my_answer.x0 = strtol(end, &end, 10);
+                    my_answer.y0 = strtol(end, &end, 10);
+                    my_answer.w = strtol(end, &end, 10);
+                    my_answer.h = strtol(end, &end, 10);
+                    if (my_count != my_answer.w * my_answer.h * 3 + 6) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
+                    my_sprite[ind].data_length = my_answer.w * my_answer.h * 3;
+                    for (int i = 0; i < my_sprite[ind].data_length; i++)
+                    {
+                        my_sprite[ind].data_arr[i] = strtol(end, &end, 16);
                     }
                     break;
-                case DRAW_IMAGE:
-                    {
-                        my_answer.sprite_index = strtol(end, &end, 10);
-                        int ind = my_answer.sprite_index - 1;
-                        my_answer.x0 = strtol(end, &end, 10);
-                        my_answer.y0 = strtol(end, &end, 10);
-                        my_answer.w = strtol(end, &end, 10);
-                        my_answer.h = strtol(end, &end, 10);
-                        if (my_count != my_answer.w*my_answer.h*3 + 6) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
-                        my_sprite[ind].data_length = my_answer.w * my_answer.h * 3;
-                        for (int i = 0; i < my_sprite[ind].data_length; i++) 
-                        {
-                            my_sprite[ind].data_arr[i] = strtol(end, &end, 16);
-                        }
-                        break;
-                    }
+                }
                 case SET_ORIENTATION:
                     if (my_count != 2) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
                     else
                     {
                         my_answer.orientation = strtol(end, &end, 10);
                         if (my_answer.orientation < 1 || my_answer.orientation >4) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
-                        else 
+                        else
                         {
                             my_answer.orientation = my_answer.my_orientation[my_answer.orientation - 1];
                         }
