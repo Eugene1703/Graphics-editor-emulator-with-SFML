@@ -58,10 +58,6 @@ int main(int argc, char* argv[])
             sockaddr_in client_addr;
             int client_addr_size = sizeof(client_addr);
             int bsize = recvfrom(Socket, buff, sizeof(buff) - 1, 0, (sockaddr*)&client_addr, &client_addr_size);
-            if (bsize == SOCKET_ERROR)
-            {
-                printf("recvfrom() error: %d\n", WSAGetLastError());
-            };
             if (bsize > 0)
             {
                 HOSTENT* hst;
