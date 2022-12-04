@@ -93,6 +93,10 @@ public:
                         my_answer.y0 = strtol(end, &end, 10);
                         my_answer.w = strtol(end, &end, 10);
                         my_answer.h = strtol(end, &end, 10);
+                        if (my_answer.h < 1 || my_answer.w < 1)
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                         break;
                     }
                 case DRAW_FILL_RECTANGLE:
@@ -103,6 +107,10 @@ public:
                         my_answer.y0 = strtol(end, &end, 10);
                         my_answer.w = strtol(end, &end, 10);
                         my_answer.h = strtol(end, &end, 10);
+                        if (my_answer.h < 1 || my_answer.w < 1)
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                         break;
                     }
                 case DRAW_ELLIPSE:
@@ -113,6 +121,10 @@ public:
                         my_answer.y0 = strtol(end, &end, 10);
                         my_answer.radius_x = strtol(end, &end, 10);
                         my_answer.radius_y = strtol(end, &end, 10);
+                        if (my_answer.radius_x < 1 || my_answer.radius_y < 1)
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                         break;
                     }
                 case DRAW_FILL_ELLIPSE:
@@ -123,6 +135,10 @@ public:
                         my_answer.y0 = strtol(end, &end, 10);
                         my_answer.radius_x = strtol(end, &end, 10);
                         my_answer.radius_y = strtol(end, &end, 10);
+                        if (my_answer.radius_x < 1 || my_answer.radius_y < 1)
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                         break;
                     }
                 case DRAW_CIRCLE:
@@ -147,11 +163,16 @@ public:
                     if (my_count != 9) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
                     else
                     {
+
                         my_answer.x0 = strtol(end, &end, 10);
                         my_answer.y0 = strtol(end, &end, 10);
                         my_answer.w = strtol(end, &end, 10);
                         my_answer.h = strtol(end, &end, 10);
                         my_answer.radius = strtol(end, &end, 10);
+                        if (my_answer.h <1 || my_answer.w < 1)
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                         break;
                     }
                 case DRAW_FILL_ROUNDED_RECTANGLE:
@@ -163,6 +184,10 @@ public:
                         my_answer.w = strtol(end, &end, 10);
                         my_answer.h = strtol(end, &end, 10);
                         my_answer.radius = strtol(end, &end, 10);
+                        if (my_answer.h < 1 || my_answer.w < 1)
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                         break;
                     }
                 case DRAW_TEXT:
@@ -177,7 +202,10 @@ public:
                         my_answer.font = strtol(end, &end, 10);
                         my_answer.length = strtol(end, &end, 10);
                         my_answer.text = end;
-
+                        if (my_answer.length != my_answer.text.length()) 
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                     }
                     break;
                 case DRAW_IMAGE:
@@ -186,6 +214,10 @@ public:
                         my_answer.y0 = strtol(end, &end, 10);
                         my_answer.w = strtol(end, &end, 10);
                         my_answer.h = strtol(end, &end, 10);
+                        if (my_answer.h < 1 || my_answer.w < 1)
+                        {
+                            my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break;
+                        }
                         if (my_count != my_answer.w*my_answer.h*3 + 5) { my_answer.error += "Не вірно набрана команда"; my_answer.check = false; break; }
                         my_answer.data_length = my_answer.w * my_answer.h * 3;
                         for (int i = 0; i < my_answer.data_length; i++) 

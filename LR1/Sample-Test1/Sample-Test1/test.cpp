@@ -25,12 +25,12 @@ TEST(TestCmd, clear_2)
 }
 TEST(TestCmd, draw_pixel)
 {
-	string str = "1 50 50 00 00 ff";
+	string str = "1 -50 50 00 00 ff";
 	parser my_parser(1280, 720);
 	my_parser.parse(const_cast<char*>(str.c_str()));
 	ASSERT_EQ(my_parser.my_answer.comm_id, DRAW_PIXEL);
 	ASSERT_TRUE(my_parser.my_answer.check);
-	ASSERT_EQ(my_parser.my_answer.x0, 50);
+	ASSERT_EQ(my_parser.my_answer.x0, -50);
 	ASSERT_EQ(my_parser.my_answer.y0, 50);
 	ASSERT_EQ(my_parser.my_answer.R, 0);
 	ASSERT_EQ(my_parser.my_answer.G, 0);

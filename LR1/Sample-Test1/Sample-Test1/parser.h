@@ -20,7 +20,7 @@ public:
     struct answer
     {
     public:
-        int comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y, R, G, B, font, length, orientation;
+        int_least16_t comm_id, width, height, x0, y0, x1, y1, w, h, radius, radius_x, radius_y, R, G, B, font, length, orientation;
         string text;
         bool check;
         string error = "Помилка: ";
