@@ -1,0 +1,182 @@
+﻿  Source.cpp
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\parser.h(158,43): warning C4018: <: несоответствие типов со знаком и без знака
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\parser.h(203,39): warning C4018: <: несоответствие типов со знаком и без знака
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Rounded_Rectangle_Shape.h(34,30): warning C4244: инициализация: преобразование "unsigned int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Rounded_Rectangle_Shape.h(38,1): warning C4305: инициализация: усечение из "double" в "float"
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(18,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(36,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(43,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(43,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(45,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(56,19): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(63,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(63,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(69,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(70,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(70,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(72,32): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(78,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(79,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(79,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(86,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(86,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(87,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(89,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(89,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(90,38): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(97,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(97,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(98,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(100,34): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(100,30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(109,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\draw.h(109,22): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(92,115): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(92,91): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(104,91): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(104,68): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(105,91): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(105,68): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(117,122): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(117,99): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(117,179): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(117,155): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(127,122): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(127,99): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(127,179): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(127,155): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(167,105): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(167,80): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(167,168): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(167,141): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(196,103): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(196,80): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(212,105): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(212,80): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(212,169): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(212,141): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(231,103): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(231,80): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(243,65): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Project5\Source.cpp(269,32): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Project5.vcxproj -> X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Project5\Debug\Project5.exe

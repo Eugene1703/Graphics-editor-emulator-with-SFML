@@ -1,0 +1,4 @@
+﻿  Client_UDP_GraphLib.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\wingdi.h(1856,1): warning C4005: RGB: изменение макроопределения
+X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Client_UDP_GraphLib\Client_UDP_GraphLib\GraphicsLib.h(7): message : см. предыдущее определение "RGB"
+  Client_UDP_GraphLib.vcxproj -> X:\КСКС\KCKC_repos\KCKC_Semishko\LR7\Client_UDP_GraphLib\Debug\Client_UDP_GraphLib.exe
